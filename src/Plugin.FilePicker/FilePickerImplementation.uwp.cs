@@ -24,7 +24,7 @@ namespace Plugin.FilePicker
         /// <returns>
         /// File data object, or null when user cancelled picking file
         /// </returns>
-        public async Task<FileData> PickFile(string[] allowedTypes)
+        public async Task<FileData> PickFile(string[] allowedTypes, bool multipleSelection)
         {
             var picker = new Windows.Storage.Pickers.FileOpenPicker
             {
